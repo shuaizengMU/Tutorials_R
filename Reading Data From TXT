@@ -1,4 +1,12 @@
+Source: http://www.sthda.com/english/wiki/reading-data-from-txt-csv-files-r-base-functions
+
 Reading Data From TXT|CSV Files: R Base Functions
+
+read.csv(): for reading “comma separated value” files (“.csv”).
+read.csv2(): variant used in countries that use a comma “,” as decimal point and a semicolon “;” as field separators.
+read.delim(): for reading “tab-separated value” files (“.txt”). By default, point (“.”) is used as decimal points.
+read.delim2(): for reading “tab-separated value” files (“.txt”). By default, comma (“,”) is used as decimal points.
+
 
 # Read tabular data into R
 read.table(file, header = FALSE, sep = "", dec = ".")
@@ -10,3 +18,9 @@ read.csv2(file, header = TRUE, sep = ";", dec = ",", ...)
 # Read TAB delimited files
 read.delim(file, header = TRUE, sep = "\t", dec = ".", ...)
 read.delim2(file, header = TRUE, sep = "\t", dec = ",", ...)
+
+
+file: the path to the file containing the data to be imported into R.
+sep: the field separator character. “\t” is used for tab-delimited file.
+header: logical value. If TRUE, read.table() assumes that your file has a header row, so row 1 is the name of each column. If that’s not the case, you can add the argument header = FALSE.
+dec: the character used in the file for decimal points.
