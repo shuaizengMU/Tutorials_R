@@ -1,5 +1,7 @@
 # R ggplot Function for Prettier Manhattan Plots
-by: Pagé Goddard
+Author: Pagé Goddard
+Source: https://github.com/pcgoddard/Burchardlab_Tutorials/wiki/GGplot2-Manhattan-Plot-Function#use
+
 
 March 22 2017
 
